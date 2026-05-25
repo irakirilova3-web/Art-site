@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galerie des Muses - L'Âge des Muses</title>
+        <link rel="stylesheet" href="pre_raf_style.css">
+        <link rel="icon" type="image/jpg" href="images/favicon_preraphaelite.png">
+    </head>
+    <body>
+
+        <header>
+            <img class="logo" src="images/logo.png" alt="Logo L'Âge des Muses">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="#gallery">Galerie des muses</a></li>
+                    <li><a href="history.html">Histoire</a></li>
+                    <li><a href="map.html">Carte</a></li>
+                    <li><a href="workshops.html">Ateliers</a></li>
+                    <li><a href="community.html">Communauté</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="gallery" id="gallery">
+                <h1>Galerie des Muses</h1>
+                <p> Appuyez sur une photo pour l'explorer. </p>
+                <br>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('images/Boreas.jpg')">
+                        <img class="gallery-image" src="images/Boreas.jpg" alt="Boreas">
+                        <div class="pointer-overlay"> Ouvrir </div> <!-- Pointer icon -->
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Proserpine.jpg')">
+                        <img class="gallery-image" src="images/Proserpine.jpg" alt="Proserpine">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Beata.jpg')">
+                        <img class="gallery-image" src="images/Beata.jpg" alt="Beata Beatrix">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Lilith.jpg')">
+                        <img class="gallery-image" src="images/Lilith.jpg" alt="Lilith">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Aurelia.jpg')">
+                        <img class="gallery-image" src="images/Aurelia.jpg" alt="Aurelia">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/TheAnnunciation.jpg')">
+                        <img class="gallery-image" src="images/TheAnnunciation.jpg" alt="The Annunciation">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Chatterton.jpg')">
+                        <img class="gallery-image" src="images/Chatterton.jpg" alt="Chatterton">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/TheBeloved.jpg')">
+                        <img class="gallery-image" src="images/TheBeloved.jpg" alt="The Beloved">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/TheMirrorOfVenus.jpg')">
+                        <img class="gallery-image" src="images/TheMirrorOfVenus.jpg" alt="The Mirror of Venus">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/LaBelleIselut.jpg')">
+                        <img class="gallery-image" src="images/LaBelleIselut.jpg" alt="La belle Iselut">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/AwakeningConscience.jpg')">
+                        <img class="gallery-image" src="images/AwakeningConscience.jpg" alt="Awakening Conscience">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Isabella.jpg')">
+                        <img class="gallery-image" src="images/Isabella.jpg" alt="Isabella">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Mariana.jpg')">
+                        <img class="gallery-image" src="images/Mariana.jpg" alt="Mariana">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/TheGoldenStairs.jpg')">
+                        <img class="gallery-image" src="images/TheGoldenStairs.jpg" alt="The Golden Stairs">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/Waterhouse.jpg')">
+                        <img class="gallery-image" src="images/Waterhouse.jpg" alt="The Lady of Shalott">
+                        <div class="pointer-overlay">Ouvrir</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="lightbox" id="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <a href="https://www.linkedin.com/in/blagomira-petkova-6b0b9821b/" target="_blank">
+                    <img src="images/LInkedInLogo.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:blagomira.kirilova@gmail.com" target="_blank">
+                    <img src="images/gmailLogo.png" alt="Gmail">
+                </a>
+            </div>
+            <p>&copy; 2025 Blagomira Petkova. Tous droits réservés.</p>
+        </footer>
+
+        <script src="pre_raf_script.js"></script>
+    </body>
+</html>
